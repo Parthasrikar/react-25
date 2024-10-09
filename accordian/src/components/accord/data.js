@@ -1,4 +1,4 @@
-export  let data = [
+let data = [
     {
       id  : '1',
       question: "What are accordion components?",
@@ -24,3 +24,5 @@ export  let data = [
         "Yes of course, it is very possible to create an accordion component with another framework.",
     },
   ];
+
+export default data;
