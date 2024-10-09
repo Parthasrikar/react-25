@@ -7,7 +7,7 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 function ImageSlider({ url, limit }) {
   const [images, setimages] = useState([]);
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0); 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -50,7 +50,7 @@ function ImageSlider({ url, limit }) {
   }
 
   return (
-    <div className="container w-[50%] ml-[25%] mt-20">
+    <div className="container w-[50%] ml-[25%] mt-0 mb-20">
       <BsArrowLeftCircleFill onClick={handlePre} className="arrow arrow-left"></BsArrowLeftCircleFill>
       {images && images.length
         ? images.map((imageItem, index) => (
